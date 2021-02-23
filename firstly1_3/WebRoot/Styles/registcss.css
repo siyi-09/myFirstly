@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+body{
+background-image:url(/firstly1_3/images/bg2.jpg);
+background-size:100% 100%;  
+background-position: center center;
+background-color:#60C6EC}
+
+.button {
+border-radius: 5px;
+    background-color: #007d52; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 72px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.input{
+border-radius: 5px;
+    background: red;
+    padding: 6px 10px;
+    color: black;    
+}
+.button1:hover {
+  background-color: #4CAF50; 
+  color: white;
+}
+.button3 {
+    background-color: red; 
+    color: white; 
+    border: none;
+}

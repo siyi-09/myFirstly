@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+.fb{
+	border-radius: 20px;
+    background-color: #2cbeb9; /* blue */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.fb:hover {
+  background-color: #4CAF50; 
+  color: white;
+}
+.develop{
+	background-image:url(/firstly1_3/images/plw.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:100%;
+    background-color: transparent;
+    border: none;
+    color:black;
+    padding: 8px 0px 0px 0px;
+    width:23px;
+    heigh:23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.develop:hover{
+border-radius: 20px;
+border:1px solid green;
+background-color: white;
+color:black;
+padding: 8px 0px 0px 0px;
+width:300px;
+opacity:0.8;
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/firstly?useUnicode=true&amp;characterEncoding=UTF-8">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="zjy123456"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/bean/Admin.hbm.xml</value>
+				<value>com/bean/User.hbm.xml</value>
+				<value>com/bean/Operation.hbm.xml</value>
+				<value>com/bean/Section.hbm.xml</value>
+				<value>com/bean/Topic.hbm.xml</value>
+				<value>com/bean/Comment.hbm.xml</value></list>
+		</property></bean>
+	
+	<bean id="ad" class="com.dao.AdminDaoImp">
+		<property name="sessionFactory" ref="sessionFactory">
+		</property>
+	</bean>
+	<bean id="ab" class="com.biz.AdminBizImp" abstract="false">
+		<property name="ad" ref="ad"/>
+	</bean>
+	
+	<bean id="ud" class="com.dao.UserDaoImp">
+		<property name="sessionFactory" ref="sessionFactory">
+		</property>
+	</bean>
+	<bean id="ub" class="com.biz.UserBizImp" abstract="false">
+		<property name="ud" ref="ud"/>
+	</bean>
+	
+	<bean id="td" class="com.dao.TopicDaoImp">
+		<property name="sessionFactory" ref="sessionFactory">
+		</property>
+	</bean>
+	<bean id="tb" class="com.biz.TopicBizImp" abstract="false">
+		<property name="td" ref="td"/>
+	</bean>
+	
+	<bean id="sd" class="com.dao.SectionDaoImp">
+		<property name="sessionFactory" ref="sessionFactory">
+		</property>
+	</bean>
+	<bean id="sb" class="com.biz.SectionBizImp" abstract="false">
+		<property name="sd" ref="sd"/>
+	</bean>
+	
+		<bean id="cd" class="com.dao.CommentDaoImp">
+		<property name="sessionFactory" ref="sessionFactory">
+		</property>
+	</bean>
+	<bean id="cb" class="com.biz.CommentBizImp" abstract="false">
+		<property name="cd" ref="cd"/>
+	</bean>
+		</beans>

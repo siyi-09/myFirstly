@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="validate" extends="struts-default" namespace="/">
+          <action name="adminLogin" class="com.action.AdminAction" method="adminLogin">
+			<result name="success">/Admin/adminindex.jsp</result>
+            <result name="input">/adminlogin.jsp</result>
+          </action>
+          <action name="invalidateadmin" class="com.action.AdminAction" method="invalidateAdmin">
+			<result name="success">/adminlogin.jsp</result>
+          </action>
+          <action name="oper" class="com.action.AdminAction" method="selAlloper">
+			<result name="success">/Admin/adminindex.jsp</result>
+          </action>
+          <action name="useroper" class="com.action.AdminAction" method="selAlluser">
+			<result name="success">/Admin/adminalluser.jsp</result>
+          </action>
+           <action name="lookuser" class="com.action.AdminAction" method="selectUserById">
+			<result name="success">/Admin/adminuserdata.jsp</result>
+          </action>
+            <action name="deluser" class="com.action.AdminAction" method="delUser">
+			<result name="success">/Admin/adminalluser.jsp</result>
+          </action>
+          <action name="toupuser" class="com.action.AdminAction" method="selectUserById">
+			<result name="success">/Admin/aupdateuser.jsp</result>
+          </action>
+          <action name="updateuser" class="com.action.AdminAction" method="updateUser">
+			<result name="success">/Admin/adminuserdata.jsp</result>
+			<result name="input">/Admin/aupdateuser.jsp</result>
+          </action>
+          <action name="seladmin" class="com.action.AdminAction" method="selectAdminAll">
+			<result name="success">/Admin/administer.jsp</result>
+          </action>
+          <action name="deladmin" class="com.action.AdminAction" method="delAdmin">
+			<result name="success">/Admin/administer.jsp</result>
+          </action>
+           <action name="addadmin" class="com.action.AdminAction" method="addAdmin">
+          <interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="token"></interceptor-ref>
+			<result name="success">/Admin/administer.jsp</result>
+			<result name="invalid.token">/Admin/adminindex.jsp</result>
+			<result name="input">/Admin/adminadd.jsp</result>
+          </action>
+          <action name="toupadmin" class="com.action.AdminAction" method="selectAdminById">
+			<result name="success">/Admin/updateadmin.jsp</result>
+          </action>
+          <action name="updateadmin" class="com.action.AdminAction" method="updateAdmin">
+			<result name="success">/Admin/administer.jsp</result>
+          </action>
+          <action name="selectUserByName" class="com.action.AdminAction" method="selectUserByName">
+			<result name="success">/Admin/adminalluser.jsp</result>
+          </action>
+          <action name="aselectTopicAll" class="com.action.TopicAction" method="selectTopicAll">
+			<result name="success">/Admin/adminalltopic.jsp</result>
+          </action>
+          <action name="selectTopicByItd" class="com.action.TopicAction" method="selectTopicById">
+			<result name="success">/Admin/adminOneTopic.jsp</result>
+          </action>
+          <action name="adelTopic" class="com.action.TopicAction" method="adelTopic">
+			<result name="success">/Admin/adminalltopic.jsp</result>
+          </action>
+          
+           <action name="regist" class="com.action.UserAction" method="registUser">
+          <interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="token"></interceptor-ref>
+			<result name="success">/User/message.jsp</result>
+          <result name="invalid.token">/User/message.jsp</result><!-- invalid.token这里的jsp页面为点击刷新后跳转的页面 -->
+          <result name="input">/userregist.jsp</result>
+          </action>
+          <action name="loginuser" class="com.action.UserAction" method="loginUser">
+			<result name="success">/MyJsp.jsp</result>
+            <result name="input">/userlogin.jsp</result>
+          </action>
+          <action name="invalidateuser" class="com.action.UserAction" method="invalidateUser">
+			<result name="success">/userlogin.jsp</result>
+          </action>
+          <action name="selectUserById" class="com.action.UserAction" method="selectUserById">
+			<result name="success">/User/Myindex.jsp</result>
+          </action>
+          <action name="toUp" class="com.action.UserAction" method="selectUserById">
+			<result name="success">/User/upUser.jsp</result>
+          </action>
+          <action name="updateUser" class="com.action.UserAction" method="updateUser">
+			<result name="success">/User/Myindex.jsp</result>
+          </action>
+          <action name="updateUhead" class="com.action.UserAction" method="updateUhead">
+			<result name="success">/User/Myindex.jsp</result>
+          </action>
+          <action name="commentpoly" class="com.action.CommentAction" method="addComment">
+          <interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="token"></interceptor-ref>
+			<result name="success">/User/UserOneTopicqr.jsp</result>
+			<result name="invalid.token">/User/nofresh.jsp</result>
+			<result name="input">/index.jsp</result>
+          </action>
+          <action name="delTopic" class="com.action.TopicAction" method="delTopic">
+			<result name="success">/User/Myindex.jsp</result>
+          </action>
+          <action name="delComment" class="com.action.CommentAction" method="delComment">
+			<result name="success">/User/UserOneTopicqr.jsp</result>
+          </action>
+          <action name="SeCommentByTid" class="com.action.CommentAction" method="SeCommentByTid">
+			<result name="success">/User/UserOneTopicqr.jsp</result>
+          </action>
+          <action name="selectTopicAll" class="com.action.TopicAction" method="selectTopicAll">
+			<result name="success">/index.jsp</result>
+          </action>
+          <action name="addTopic" class="com.action.TopicAction" method="addTopic">
+          <interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="token"></interceptor-ref>
+			<result name="success">/index.jsp</result>
+			<result name="invalid.token">/User/nofresh.jsp</result>
+			<result name="input">/index.jsp</result>
+          </action>
+          <action name="selectTopicById" class="com.action.TopicAction" method="selectTopicById">
+			<result name="success">/User/upTopic.jsp</result>
+			<result name="input">/index.jsp</result>
+          </action>
+          <action name="updateTopic" class="com.action.TopicAction" method="updateTopic">
+			<result name="success">/User/Myindex.jsp</result>
+			<result name="input">/index.jsp</result>
+          </action>
+          <action name="selectTopicByTop" class="com.action.TopicAction" method="selectTopicByTop">
+			<result name="success">/index.jsp</result>
+			<result name="input">/index.jsp</result>
+          </action>
+          <action name="updateTbg" class="com.action.TopicAction" method="updateTbg">
+			<result name="success">/User/upTopic.jsp</result>
+			<result name="input">/index.jsp</result>
+          </action>
+</package>
+</struts>    

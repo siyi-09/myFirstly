@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+.button {
+border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    padding: 13px 72px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.myintb1{
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:cover;
+	
+}
+.buttonb {
+    border-radius: 5px;
+    background-color: 41c28a;
+    border: none;
+    color: black;
+    padding: 10px 72px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button1:hover {
+  background-color: #4CAF50; 
+  color: black;
+}
+.s1{
+border-radius: 5px;
+border:1px solid green;
+padding: 6px 10px;
+}

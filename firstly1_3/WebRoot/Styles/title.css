@@ -1,0 +1,109 @@
+@CHARSET "UTF-8";
+body{
+background-image:url(/firstly1_3/images/bg2.jpg);
+background-size:100% 100%;  
+background-position: center center;
+}
+
+#do{ 
+   width:100%;
+   padding:0px 0px;
+   margin:0 0 auto;
+   position:fixed;
+}
+
+*{padding:0;
+  }
+   
+a{ 
+color:white;
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:none;
+}
+
+container {
+    height: 0px;
+    width: 0px;
+    margin: 0px auto 0 auto;
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:black;
+  }
+  
+li{
+    float:right;
+    display:inline;
+    text-align:center;
+    padding:2px 16px;
+    text-decoration:none;
+  }
+  
+li a, .dropbtn{
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding:10px 16px 0px 10px;
+    text-decoration:none;
+}
+  
+li a:hover, .dropdown:hover, .dropbtn{
+    background-color:black;
+}
+  
+ul a, .dropdown{
+	text-align:center;
+	padding:5px 16px 10px;
+    display:inline-block;
+    background-color:black;
+}
+
+li a, .dropheaddown{
+    display:inline-block;
+    background-color:black;
+}
+
+li a, .dropbtn2{
+	display:inline-block;
+    color:white;
+    text-align:center;
+    padding:0px 16px 0px 10px;
+    text-decoration:none;
+}
+  
+.dropdown-content{
+    display:none;
+    float:none;
+    position:absolute;
+    background-color:black;
+    min-width:130px;
+    box-shadow:1px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+.dropdown-content a{
+    color:white;
+    font-size: 13px;
+    padding:10px 10px;
+    text-decoration:none;
+    display:block;
+}
+  
+.dropdown-content a:hover {
+	background-color: #9C9;/* 由 22.4% 青色, 23.9% 品红, 0% 黄色 和 21.2% 黑色. */
+  
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.dropheaddown:hover .dropdown-content{
+    display:block;
+}

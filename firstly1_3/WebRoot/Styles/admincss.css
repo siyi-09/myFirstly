@@ -1,0 +1,176 @@
+@CHARSET "UTF-8";
+body{
+background-image:url(/firstly1_3/images/bg6.jpg);
+background-size:100% 100%;  
+background-position: center center;
+background-color:#60C6EC}
+a{ 
+text-transform:none;
+text-decoration:none;}
+a:hover{
+text-decoration:underline;
+}
+
+#rcorners2 {
+    border-radius: 5px;
+    border: 2px solid #8AC007;
+    outline:none;
+    margin:0px;
+    padding: 15px; 
+    width: 90%;
+    
+}
+.buttonfull{
+	border-radius: 5px;
+	border: none;
+	background-color: #3AAEEF;
+	width:60%;
+    height:100%;
+    font-size:16px;
+    color:white;
+    margin:0px;
+    padding: 13px 72px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button {
+border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    padding: 13px 72px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.buttona {
+border-radius: 5px;
+    background-color: yellow; /* yellow */
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.buttonb {
+border-radius: 5px;
+    background-color: yellow; /* yellow */
+    border: none;
+    color: black;
+    padding: 10px 72px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button1:hover {
+  background-color: #4CAF50; 
+  color: black;
+}
+.button2:hover {
+  background-color: pink; 
+  color: white;
+}
+.buttonfull:hover {
+  background-color: pink; 
+  color: black;
+}
+.input3{
+border-radius: 5px;
+    background: red;
+    padding: 6px 10px;
+    color: black;    
+}
+.button3 {
+    background-color: #5076F0; 
+    color: white; 
+    border: none;
+}
+.button4 {
+	border-radius: 5px;
+	background-color: yellow;
+	padding:6px 15px;
+	color: black;
+	border: none;
+}
+.input1{
+border-radius: 5px;
+    background: #4CAF50;
+    padding: 6px 10px;
+    color: black;    
+}
+.input2 {
+    background-color: transparent;
+    font-size:35px; 
+    color: white; 
+    border: none;
+}
+.table1{
+border-radius: 5px;
+ background-origin:content;
+ background-position:50% 50%;
+ background-size:cover;
+ background-repeat:no-repeat;
+}
+.td1{
+background-image:url(/Firstly/images/bg8.jpg);
+background-color:white;
+background-size:100% 100%;
+background-repeat:no-repeat;
+background-position: center center;
+}
+
+.read{
+	border-radius: 5px;
+	border:1px solid green;
+	padding: 10px 30px;
+	color:black;
+}
+ul.pagination {
+    display: inline-block;
+    padding: 2px 0px;
+    margin: 0;
+    width: 100%;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+ul.pagination li a:hover:not(.active) {
+	background-color: #ddd;
+	}
+.s1{
+border-radius: 5px;
+border:1px solid green;
+padding: 6px 10px;
+}
+	
+	

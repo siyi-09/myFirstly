@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="tb_admin" catalog="firstly" class="com/bean/Admin">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="tb_user" catalog="firstly" class="com/bean/User">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="tb_operate" catalog="firstly"
+		class="com/bean/Operation">
+	</table>
+	<table name="tb_section" catalog="firstly"
+		class="com.bean.Section">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="tb_topic" catalog="firstly" class="com.bean.Topic">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+    <table name="tb_comment" catalog="firstly" class="com.bean.Comment">
+	<primary-key>
+		<generator class="native"></generator>
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>
